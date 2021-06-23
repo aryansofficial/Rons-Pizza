@@ -1,3 +1,0 @@
-1. Make a Decorator for redirecting users not authorized to create accounts in register view.
-2. Read QuerySet https://docs.djangoproject.com/en/3.2/ref/models/querysets/
-3. read django.contrib.auth https://docs.djangoproject.com/en/3.2/ref/contrib/auth/ 
