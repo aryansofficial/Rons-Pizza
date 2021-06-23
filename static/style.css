@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+
+:root{
+    --background-primary: #B4161B;
+    --background-primary: #BF3325;
+    --background-white: whitesmoke;
+    --card-background-black: #1c1c1c;
+    --card-background-black: #242B2E;
+    --flourecent-blue: rgb(102, 157, 246);
+    --card-background-green: #1FAA59;
+}
+
+body {
+    background-color: var(--background-primary);
+}
+
+nav {
+    background-color:var(--background-white);
+    font-size: 1.2rem;
+}
+
+form > div > input {
+    max-width: 25rem;
+}
+
+.login-container {
+    background-color: var(--card-background-black);
+    border-radius: 15px;
+}
+
+.logo-font {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2rem;
+    font-weight: 1000;
+}
+
+.ron-is-cooking {
+    font-family: 'Sedgwick Ave', cursive;
+    font-size: 6rem;
+    transform: rotate(19deg);
+}
+
+.card {
+    width: 40rem;
+    border-radius: 5%;
+    padding: 5px;
+    color: #fff;
+    background-color: var(--card-background-black);
+    transition: all 0.15s;
+    /* box-shadow: inset 0 -3px rgba(0,0,0,.2),0 0 10px var(red); */
+}
+
+.card:hover {
+    transform: scale(1.01);
+}
+
+.card, .card > a > img, .card > img {
+    border-radius: 5%;
+}
+
+.btn {
+    box-shadow: inset 0 -6px rgba(0,0,0,.2);
+}
+
+.btn-custom-danger {
+    background-color: var(--background-primary);
+    color: #fff;
+    padding: 0.5rem 3rem; 
+}
+
+.btn-custom-danger:hover,.btn-custom-success:hover  {
+    color: #fff;
+}
+
+.btn-custom-success {
+    background-color: var(--card-background-green);
+    /* background-color: var(--card-background-black); */
+    /* border: 2px solid rgb(66, 133, 244); */
+    color: #fff;
+    /* text-shadow: 0 2px 5px #563719; */
+    font-size: 1.2rem;
+    padding: 0.4rem 3rem;
+}
+
+.btn-custom-success:hover {
+    /* background-color: rgb(66, 133, 244); */
+}
+
+.btn-custom-info {
+    background-color: #EDC126;
+    color: #fff;
+}
+
+footer {
+    width: 100%;
+    padding-top: 1.5rem;
+    background-color: var(--card-background-black);
+    color: var(--background-white);
+    height: 20vh;
+}
+
+#number-box {
+    display: inline-block;
+    width: 4rem;
+}
+
+#dashboard {
+    /* font-family: 'Raleway Dots', cursive; */
+    font-family: 'DotGothic16', sans-serif;
+    font-size: 3rem;
+    /* font-weight:bolder; */
+}

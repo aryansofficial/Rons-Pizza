@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+  {% block content %}
+      <div class="container mt-4">
+        {% include 'includes/nav.html' %}
+
+        <!-- Rest Of the page -->
+        {% for order in orders %}
+          <div class="d-flex justify-content-center">
+              <div class="shadow-lg card rounded mx-1 mb-5">
+                <div class="card-body d-flex justify-content-around">
+                  <h5 class="card-title ">{{order.name}}</h5>
+                  <h5 class="">Quantity: {{order.quantity}}</h5>
+                  </div>
+                  <form action="" class="d-flex justify-content-around mb-3">
+                    <a class="btn btn-custom-info" href={% url "update" order.id "P"  %}>Cooking</a>
+                    <a class="btn btn-custom-success" href={% url "update" order.id "C"  %}>Ready</a>
+                    <a class="btn btn-custom-danger" href={% url "update" order.id "R"  %}>Cancel</a>
+                  </form>
+              </div>
+          </div>
+
+          <!-- end of the container -->
+        </div>
+      {% endfor %}
+    {% include 'includes/footer.html' %}
+  {% endblock content %}

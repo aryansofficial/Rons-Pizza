@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+      <div class="container mt-4">
+        {% include 'includes/nav.html' %}
+        <!-- Rest Of the page -->
+        
+        <div class="text-center container text-white" id="dashboard">
+            <div class="">
+            On Stove : 
+                {% for order in preapearing %}
+                  {{order.id}}
+                {% endfor %}
+                <img src={% static 'cooking.png' %} alt="">
+            </div>
+            <div class="">
+                Ready : {% for order in completed %}
+                  {{order.id}}
+                {% endfor %}
+                <img src={% static 'serving.png' %} alt="">
+            </div>
+            <img class="my-3" src={% static "healthy-eating.png" %} style="height: 40vh;" alt="">
+        </div>
+
+        <!-- end of the container -->
+      </div>
+
+      {% include 'includes/footer.html' %}
+{% endblock content %}
+
+{% block scripts %}
+{% endblock scripts %}
